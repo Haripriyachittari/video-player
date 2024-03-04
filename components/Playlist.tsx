@@ -75,7 +75,10 @@ const Playlist: React.FC<PlaylistProps> = ({
                 height={100}
                 className="rounded-md"
               />
-              <p>{video.title}</p>
+              <div>
+                <p className="font-medium">{video.title}</p>
+                <p className="text-sm">{video.subtitle}</p>
+              </div>
             </div>
           ))}
       </div>
