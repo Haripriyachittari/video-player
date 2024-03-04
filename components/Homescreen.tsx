@@ -30,7 +30,7 @@ const Homescreen = () => {
   useEffect(() => {
     if (typeof window !== undefined) {
       const storedVideo = JSON.parse(localStorage.getItem("currentVideo")!);
-      console.log(storedVideo, "store");
+      // console.log(storedVideo, "store");
       if (storedVideo) {
         setCurrentlyPlayingVideo(storedVideo);
       } else {
