@@ -49,11 +49,11 @@ const Videoplayer: React.FC<VideoplayerProps> = ({
 
   const handleVideoEnd = () => {
     if (!autoPlayOn) return;
-    console.log(allVideos.length);
+    // console.log(allVideos.length);
     const currentVideoId = allVideos.findIndex(
       (video: VideoProps) => video.title === currentlyPlayingVideo!.title,
     );
-    console.log(currentVideoId);
+    // console.log(currentVideoId);
     if (currentVideoId === allVideos.length - 1) {
       //check if the current video in the playlist is the last one playing, looping the playlist to play the first one next
       setCurrentlyPlayingVideo(allVideos[0]);
