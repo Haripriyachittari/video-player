@@ -15,7 +15,7 @@ Demo URL: https://video-player-haripriyachittari.vercel.app/
 - **Search Playlist**: Users can search the playlist by title, enabling quick navigation to specific videos.
 - **Persistent Playback**: The application remembers the last played video and its playback position, ensuring users can resume watching from where they left off even after refreshing the page.
 - **Direct Video Selection**: Clicking on a video in the playlist immediately plays it in the video player.
-- **Mobile Responsive**: The application is optimized for mobile devicesas well, ensuring a seamless viewing experience across different screen sizes.
+- **Mobile Responsive**: The application is optimized for mobile devices as well, ensuring a seamless viewing experience across different screen sizes.
 
 ### Lighthouse score
 
