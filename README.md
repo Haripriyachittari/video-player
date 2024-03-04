@@ -17,6 +17,10 @@ Demo URL: https://video-player-haripriyachittari.vercel.app/
 - **Direct Video Selection**: Clicking on a video in the playlist immediately plays it in the video player.
 - **Mobile Responsive**: The application is optimized for mobile devicesas well, ensuring a seamless viewing experience across different screen sizes.
 
+### Lighthouse score
+
+![lighthouse_score](../video-player/public/lighthouse_score.png)
+
 ### Instructions to run
 
 - `npm install`
