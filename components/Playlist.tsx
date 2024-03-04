@@ -39,7 +39,7 @@ const Playlist: React.FC<PlaylistProps> = ({
     setDraggingIndex(index);
   };
   return (
-    <div className="mb-6 mr-8 mt-8 h-[610px] overflow-auto rounded-lg border-2 border-[#bfd7ff]  p-4">
+    <div className="mx-4 mb-10  h-[610px] overflow-auto rounded-lg border-2  border-[#bfd7ff] p-4 md:mb-6 md:mr-8  md:mt-8">
       <p className="text-2xl font-semibold">Playlist</p>
       <div className="my-4">
         <input

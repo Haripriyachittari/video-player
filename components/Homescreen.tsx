@@ -39,8 +39,8 @@ const Homescreen = () => {
     }
   }, [allVideos]);
   return (
-    <div className=" flex  h-full w-full gap-2 border  ">
-      <div className="w-[70%] ">
+    <div className=" flex h-full w-full  flex-col gap-2 border md:flex-row  ">
+      <div className="w-[100%] md:w-[70%] ">
         <Videoplayer
           currentlyPlayingVideo={currentlyPlayingVideo}
           setCurrentlyPlayingVideo={setCurrentlyPlayingVideo}
@@ -50,7 +50,7 @@ const Homescreen = () => {
           setStoredPlaybackPosition={setStoredPlaybackPosition}
         />
       </div>
-      <div className="w-[30%]">
+      <div className="w-[100%] md:w-[30%] ">
         <Playlist
           handleChangeVideo={handleChangeVideo}
           currentlyPlayingVideo={currentlyPlayingVideo}

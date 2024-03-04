@@ -65,7 +65,7 @@ const Videoplayer: React.FC<VideoplayerProps> = ({
   };
 
   return (
-    <div className="ml-8 mr-2 mt-8 flex  flex-col ">
+    <div className="m-6  flex flex-col md:ml-8 md:mr-2  md:mt-8 ">
       <video
         id="video-player"
         controls
