@@ -19,7 +19,7 @@ Demo URL: https://video-player-haripriyachittari.vercel.app/
 
 ### Lighthouse score
 
-![lighthouse_score](../video-player/public/lighthouse_score.png)
+![lighthouse_score](lighthouse_score.png)
 
 ### Instructions to run
 
