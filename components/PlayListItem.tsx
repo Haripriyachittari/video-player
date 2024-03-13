@@ -33,6 +33,7 @@ const PlayListItem: React.FC<PlayListItemProps> = ({
         poster={video?.thumb}
         id="video-player"
         // controls
+        muted
         className="cursor-pointer rounded-xl "
         ref={playListItemRef}
         preload="auto"
