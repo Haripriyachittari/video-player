@@ -2,6 +2,7 @@ import { AllContext } from "@/context/Context";
 import VideoProps from "@/types/types";
 import Image from "next/image";
 import React, { DragEventHandler, useContext, useState } from "react";
+import PlayListItem from "./PlayListItem";
 
 interface PlaylistProps {
   handleChangeVideo: (video: VideoProps) => void;
@@ -60,26 +61,35 @@ const Playlist: React.FC<PlaylistProps> = ({
             }
           })
           .map((video: VideoProps, index: number) => (
-            <div
-              draggable
+            // <div
+            //   draggable
+            //   key={index}
+            //   className={`my-2 flex cursor-pointer gap-2 rounded-md  p-2 hover:bg-[#bbdefb] ${video.title === currentlyPlayingVideo?.title ? "bg-[#bfd7ff]" : "bg-slate-200"}`}
+            //   onClick={() => handleChangeVideo(video)}
+            //   onDragStart={(event) => handleDragStart(event, index)}
+            //   onDragOver={(event) => handleDragOver(event, index)}
+            // >
+            //   <Image
+            //     src={video.thumb}
+            //     alt="poster"
+            //     width={100}
+            //     height={100}
+            //     className="rounded-md"
+            //   />
+            //   <div>
+            //     <p className="font-medium">{video.title}</p>
+            //     <p className="text-sm">{video.subtitle}</p>
+            //   </div>
+            // </div>
+            <PlayListItem
               key={index}
-              className={`my-2 flex cursor-pointer gap-2 rounded-md  p-2 hover:bg-[#bbdefb] ${video.title === currentlyPlayingVideo?.title ? "bg-[#bfd7ff]" : "bg-slate-200"}`}
-              onClick={() => handleChangeVideo(video)}
-              onDragStart={(event) => handleDragStart(event, index)}
-              onDragOver={(event) => handleDragOver(event, index)}
-            >
-              <Image
-                src={video.thumb}
-                alt="poster"
-                width={100}
-                height={100}
-                className="rounded-md"
-              />
-              <div>
-                <p className="font-medium">{video.title}</p>
-                <p className="text-sm">{video.subtitle}</p>
-              </div>
-            </div>
+              video={video}
+              handleChangeVideo={handleChangeVideo}
+              handleDragOver={handleDragOver}
+              handleDragStart={handleDragStart}
+              currentlyPlayingVideo={currentlyPlayingVideo}
+              index={index}
+            />
           ))}
       </div>
     </div>

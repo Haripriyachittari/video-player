@@ -67,6 +67,7 @@ const Videoplayer: React.FC<VideoplayerProps> = ({
   return (
     <div className="m-6  flex flex-col md:ml-8 md:mr-2  md:mt-8 ">
       <video
+        poster={currentlyPlayingVideo?.thumb}
         id="video-player"
         controls
         autoPlay
@@ -74,11 +75,13 @@ const Videoplayer: React.FC<VideoplayerProps> = ({
         ref={videoRef}
         preload="auto"
         width="100%"
-        height="auto"
+        height="600px"
         key={currentlyPlayingVideo?.sources[0]}
         onTimeUpdate={handleTimeUpdate}
         onLoadedDataCapture={handleMetadataLoaded}
         onEnded={handleVideoEnd}
+        // onMouseEnter={() => videoRef.current?.play()}
+        // onMouseLeave={() => videoRef.current?.pause()}
       >
         <source src={currentlyPlayingVideo?.sources[0]} type="video/mp4" />
       </video>
